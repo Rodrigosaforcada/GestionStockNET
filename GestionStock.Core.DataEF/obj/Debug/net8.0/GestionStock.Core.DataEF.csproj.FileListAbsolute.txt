@@ -1,0 +1,15 @@
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\bin\Debug\net8.0\GestionStock.Core.DataEF.deps.json
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\bin\Debug\net8.0\GestionStock.Core.DataEF.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\bin\Debug\net8.0\GestionStock.Core.DataEF.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\bin\Debug\net8.0\GestionStock.Core.Entities.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\bin\Debug\net8.0\GestionStock.Core.Entities.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.csproj.AssemblyReference.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.AssemblyInfoInputs.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.AssemblyInfo.cs
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.csproj.CoreCompileInputs.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionS.1973284D.Up2Date
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\refint\GestionStock.Core.DataEF.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\GestionStock.Core.DataEF.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.DataEF\obj\Debug\net8.0\ref\GestionStock.Core.DataEF.dll

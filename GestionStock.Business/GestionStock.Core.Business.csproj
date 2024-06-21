@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GestionStock.Core.DataEF\GestionStock.Core.DataEF.csproj" />
+    <ProjectReference Include="..\GestionStock.Core.Data\GestionStock.Core.Data.csproj" />
+    <ProjectReference Include="..\GestionStock.Entities\GestionStock.Core.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

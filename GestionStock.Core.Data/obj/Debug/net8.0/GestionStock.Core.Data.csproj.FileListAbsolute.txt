@@ -1,0 +1,15 @@
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\bin\Debug\net8.0\GestionStock.Core.Data.deps.json
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\bin\Debug\net8.0\GestionStock.Core.Data.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\bin\Debug\net8.0\GestionStock.Core.Data.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\bin\Debug\net8.0\GestionStock.Core.Entities.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\bin\Debug\net8.0\GestionStock.Core.Entities.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.csproj.AssemblyReference.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.AssemblyInfoInputs.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.AssemblyInfo.cs
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.csproj.CoreCompileInputs.cache
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionS.7AD7C5FD.Up2Date
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\refint\GestionStock.Core.Data.dll
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\GestionStock.Core.Data.pdb
+C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Core.Data\obj\Debug\net8.0\ref\GestionStock.Core.Data.dll

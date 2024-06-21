@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8ABD94B9-3C33-46CF-B450-1488F70786AA}|TPIProg3GestionStock\\GestionStock.AppConsola.csproj|c:\\users\\ronni\\onedrive\\escritorio\\tpiprog3\\tpiprog3gestionstock\\tpiprog3gestionstock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ABD94B9-3C33-46CF-B450-1488F70786AA}|TPIProg3GestionStock\\GestionStock.AppConsola.csproj|solutionrelative:tpiprog3gestionstock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B349970A-C9DE-4F64-AEDA-2727AA1F0E46}|GestionStock.Business\\GestionStock.Core.Business.csproj|c:\\users\\ronni\\onedrive\\escritorio\\tpiprog3\\tpiprog3gestionstock\\gestionstock.business\\ventabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B349970A-C9DE-4F64-AEDA-2727AA1F0E46}|GestionStock.Business\\GestionStock.Core.Business.csproj|solutionrelative:gestionstock.business\\ventabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B349970A-C9DE-4F64-AEDA-2727AA1F0E46}|GestionStock.Business\\GestionStock.Core.Business.csproj|c:\\users\\ronni\\onedrive\\escritorio\\tpiprog3\\tpiprog3gestionstock\\gestionstock.business\\comprabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B349970A-C9DE-4F64-AEDA-2727AA1F0E46}|GestionStock.Business\\GestionStock.Core.Business.csproj|solutionrelative:gestionstock.business\\comprabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|c:\\users\\ronni\\onedrive\\escritorio\\tpiprog3\\tpiprog3gestionstock\\gestionstock.core.dataef\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|solutionrelative:gestionstock.core.dataef\\ventarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\TPIProg3GestionStock\\Program.cs",
+              "RelativeDocumentMoniker": "TPIProg3GestionStock\\Program.cs",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\TPIProg3GestionStock\\Program.cs",
+              "RelativeToolTip": "TPIProg3GestionStock\\Program.cs",
+              "ViewState": "AQIAAIMBAAAAAAAAAAAuwJABAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:08:59.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VentaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.DataEF\\VentaRepository.cs",
+              "RelativeDocumentMoniker": "GestionStock.Core.DataEF\\VentaRepository.cs",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.DataEF\\VentaRepository.cs",
+              "RelativeToolTip": "GestionStock.Core.DataEF\\VentaRepository.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAoAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:02:57.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CompraBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\CompraBusiness.cs",
+              "RelativeDocumentMoniker": "GestionStock.Business\\CompraBusiness.cs",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\CompraBusiness.cs",
+              "RelativeToolTip": "GestionStock.Business\\CompraBusiness.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwB4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:02:45.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VentaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\VentaBusiness.cs",
+              "RelativeDocumentMoniker": "GestionStock.Business\\VentaBusiness.cs",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\VentaBusiness.cs",
+              "RelativeToolTip": "GestionStock.Business\\VentaBusiness.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T22:02:35.856Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
