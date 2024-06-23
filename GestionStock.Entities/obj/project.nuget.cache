@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b/R1Sm0AeDo4P5FBm6le9CCHV+RmFs8x3NSQ0qLJQKbkCpW0Fc53gimJYSgIE9T1lJoFSR56dfjr1DHuFQ0yew==",
+  "dgSpecHash": "UJBhC3+RGLNDTzDqVQffjD5qTJ1pb3IHoWxe1g5vFs2mJNYE5cOnuZkwSrv6tKpYB9RmI0qBtcoB6gkMwsbzWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+  "projectFilePath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ronni\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "C:\\Users\\ronni\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

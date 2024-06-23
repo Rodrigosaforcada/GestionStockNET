@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj": {}
+    "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj": {
+    "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj",
+        "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj",
         "projectName": "GestionStock.Core.Data",
-        "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj",
+        "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.Data\\GestionStock.Core.Data.csproj",
         "packagesPath": "C:\\Users\\ronni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Core.Data\\obj\\",
+        "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ronni\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
-                "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj"
+              "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
+                "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
+    "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
         "projectName": "GestionStock.Core.Entities",
-        "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
         "packagesPath": "C:\\Users\\ronni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\obj\\",
+        "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ronni\\AppData\\Roaming\\NuGet\\NuGet.Config",

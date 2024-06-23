@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/As0JcgVICJW27lushFIyACk+NfD8DAp8HrpLdkeTuRlhKz6TVmB1zqeuXbXSiFUiYi0pbNlM/0OfC6LMrC1BA==",
+  "dgSpecHash": "sUI7V3njP+GlrFSQLtahnwwq3MGM42xq/xjQ/XPJXLjmG0RG9NnMGTjQVubMsQqaxv39PsKRaJh9BvCK3hoW8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\GestionStock.Core.Business.csproj",
+  "projectFilePath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Business\\GestionStock.Core.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ronni\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\ronni\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",
