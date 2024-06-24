@@ -295,13 +295,27 @@ while (volverPrincipal)
                         int nuevaCompraCantidad = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Indique el usuario que realizo la Compra: ");
                         int nuevaCompraUsuarioId = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Indique el dia que realizo la Compra: ");
+                        int nuevaCompraDia = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Indique el mes que realizo la Compra: ");
+                        int nuevaCompraMes = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Indique el año que realizo la Compra: ");
+                        int nuevaCompraAno = Convert.ToInt32(Console.ReadLine());
 
                         if (nuevaCompraProductoId != 0 || nuevaCompraProductoId != null
                             && nuevaCompraCantidad != 0 || nuevaCompraCantidad != null
                             && nuevaCompraUsuarioId != 0 || nuevaCompraUsuarioId != null)
                         {
-                            compraBusiness.CreateCompra(DateTime.Now, nuevaCompraProductoId, nuevaCompraCantidad, nuevaCompraUsuarioId);
-                            Console.WriteLine($"Compra agregada.");
+                            DateTime fechaIngresada = new DateTime(nuevaCompraAno, nuevaCompraMes, nuevaCompraDia);
+                            var resultado = compraBusiness.CreateCompra(fechaIngresada, nuevaCompraProductoId, nuevaCompraCantidad, nuevaCompraUsuarioId);
+                            if (resultado.HasError)
+                            {
+                                Console.WriteLine($"{resultado.Message}");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Compra agregada.");
+                            }
                         }
                     }
                     catch (Exception ex)

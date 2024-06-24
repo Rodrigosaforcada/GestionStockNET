@@ -33,7 +33,9 @@ namespace GestionStock.Core.Business
                 }
             }
             nuevaVenta.ventaId = ultimoId + 1;
-            nuevaVenta.fecha = fecha;
+
+            nuevaVenta.fecha = DateTime.Now;
+
             nuevaVenta.productoId = productoId;
 
             var _config = new Config();
