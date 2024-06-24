@@ -1,0 +1,16 @@
+﻿@using GestionStock.Core.Entities
+@model ProductoListViewModel
+@{
+    ViewData["Title"] = Model.Nombre;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Nombre</h1>
+
+<ul>
+    @foreach (var prod in Model.ProductosResult.Productos)
+    {
+        <li>Nombre del Producto: @prod.nombre (@prod.productoId)</li>
+    }
+
+</ul>

@@ -1,37 +1,36 @@
 using GestionStock.Core.Business;
+using GestionStock.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebAppGestionStock.Models;
 
 namespace WebAppGestionStock.Controllers
 {
-    public class CompraController : Controller
+    public class ProductoController : Controller
     {
-        private readonly ILogger<CompraController> _logger;
-        private readonly CompraBusiness _compraBusiness;
+        private readonly ILogger<ProductoController> _logger;
+        private readonly ProductoBusiness _productoBusiness;
 
-        public CompraController(CompraBusiness compraBusiness, ILogger<CompraController> logger)
+        public ProductoController(ProductoBusiness productoBusiness, ILogger<ProductoController> logger)
         {
             _logger = logger;
-            _compraBusiness = compraBusiness;
+            _productoBusiness = productoBusiness;
+
+            //_usuarioBusiness = new UsuarioBusiness();
         }
 
         public IActionResult Index()
         {
-            var compras = _compraBusiness.GetAll();
+            var productos = _productoBusiness.GetAll();
 
-            var model = new CompraListViewModel()
+            var model = new ProductoListViewModel()
             {
-                Titulo = "Compras en el Sistema Gestion de Stock",
-                Cantidad = $"Cantidad de Compras: {compras.Compras.Count}",
-                ComprasResult = compras
+                Nombre = "Productos del Sistema Gestion de Stock",
+                Cantidad = $"Cantidad de Productos: {productos.Productos.Count}",
+                ProductosResult = productos
             };
 
             return View(model);
-        }
-        public IActionResult IngresarCompra()
-        {
-            return View("IngresarCompra");
         }
         public IActionResult Deatils()
         {

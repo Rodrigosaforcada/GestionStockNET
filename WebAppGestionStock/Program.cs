@@ -20,6 +20,8 @@ builder.Services.AddScoped<CompraRepository>();
 builder.Services.AddScoped<CompraBusiness>();
 builder.Services.AddScoped<VentaRepository>();
 builder.Services.AddScoped<VentaBusiness>();
+builder.Services.AddScoped<ProductoRepository>();
+builder.Services.AddScoped<ProductoBusiness>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

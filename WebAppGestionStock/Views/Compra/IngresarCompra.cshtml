@@ -1,0 +1,28 @@
+﻿@using GestionStock.Core.Business
+@model CompraBusiness
+@{
+    ViewData["Title"] = "IngresarCompra";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Ingresar Compra</h1>
+
+<form method="post">
+<h6>Ingrese el ID del Producto de la Compra: </h6>
+<br>
+<br>
+<input type="number" id="InputProductoId">
+<br>
+<h6>Ingrese la fecha de la Compra: </h6>
+<br>
+<br>
+<input type="date" id="InputFecha">
+<br>
+<h6>Ingrese la cantidad de unidades del Producto comprado: </h6>
+<br>
+<br>
+<input type="number" id="InputCantidad">
+<br>
+<br>
+    <button onclick="@{bool IsPostBack = true;}" type="submit">Agregar Compra</button>
+</form>

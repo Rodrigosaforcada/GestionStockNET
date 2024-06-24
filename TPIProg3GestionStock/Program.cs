@@ -1,12 +1,21 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using GestionStock.Core.Business;
+using GestionStock.Core.Configuration;
 using GestionStock.Core.Entities;
 
-var usuarioBusiness = new UsuarioBusiness();
-var categoriaBusiness = new CategoriaBusiness();
-var productoBusiness = new ProductoBusiness();
-var compraBusiness = new CompraBusiness();
-var ventaBusiness = new VentaBusiness();
+var _config = new Config();
+
+var _usuarioRepositoryEF = new GestionStock.Core.DataEF.UsuarioRepository(_config);
+var _categoriaRepositoryEF = new GestionStock.Core.DataEF.CategoriaRepository(_config);
+var _productoRepositoryEF = new GestionStock.Core.DataEF.ProductoRepository(_config);
+var _compraRepositoryEF = new GestionStock.Core.DataEF.CompraRepository(_config);
+var _ventaRepositoryEF = new GestionStock.Core.DataEF.VentaRepository(_config);
+
+var usuarioBusiness = new UsuarioBusiness(_usuarioRepositoryEF);
+var categoriaBusiness = new CategoriaBusiness(_categoriaRepositoryEF);
+var productoBusiness = new ProductoBusiness(_productoRepositoryEF);
+var compraBusiness = new CompraBusiness(_compraRepositoryEF);
+var ventaBusiness = new VentaBusiness(_ventaRepositoryEF);
 
 bool volverPrincipal = true;
 while (volverPrincipal)
