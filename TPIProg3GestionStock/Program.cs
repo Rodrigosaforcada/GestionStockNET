@@ -4,6 +4,7 @@ using GestionStock.Core.Configuration;
 using GestionStock.Core.Entities;
 
 var _config = new Config();
+_config.ConnectionString = "Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=LAPTOPLOCAL1234\\SQLEXPRESS; Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;";
 
 var _usuarioRepositoryEF = new GestionStock.Core.DataEF.UsuarioRepository(_config);
 var _categoriaRepositoryEF = new GestionStock.Core.DataEF.CategoriaRepository(_config);

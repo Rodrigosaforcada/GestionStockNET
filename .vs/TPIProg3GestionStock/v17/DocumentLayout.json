@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8ABD94B9-3C33-46CF-B450-1488F70786AA}|TPIProg3GestionStock\\GestionStock.AppConsola.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\tpiprog3gestionstock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8ABD94B9-3C33-46CF-B450-1488F70786AA}|TPIProg3GestionStock\\GestionStock.AppConsola.csproj|solutionrelative:tpiprog3gestionstock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B966849-D63D-45F7-90CD-6E9F681E62DB}|WebAppGestionStock\\WebAppGestionStock.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\webappgestionstock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8B966849-D63D-45F7-90CD-6E9F681E62DB}|WebAppGestionStock\\WebAppGestionStock.csproj|solutionrelative:webappgestionstock\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04EDF0EB-259F-4EAC-B9FE-E1C5CED2000D}|GestionStock.Core.Configuration\\GestionStock.Core.Configuration.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.core.configuration\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04EDF0EB-259F-4EAC-B9FE-E1C5CED2000D}|GestionStock.Core.Configuration\\GestionStock.Core.Configuration.csproj|solutionrelative:gestionstock.core.configuration\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.core.dataef\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|solutionrelative:gestionstock.core.dataef\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8B966849-D63D-45F7-90CD-6E9F681E62DB}|WebAppGestionStock\\WebAppGestionStock.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\webappgestionstock\\controllers\\compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8B966849-D63D-45F7-90CD-6E9F681E62DB}|WebAppGestionStock\\WebAppGestionStock.csproj|solutionrelative:webappgestionstock\\controllers\\compracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{8B966849-D63D-45F7-90CD-6E9F681E62DB}|WebAppGestionStock\\WebAppGestionStock.csproj|solutionrelative:webappgestionstock\\views\\compra\\ingresarcompra.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04EDF0EB-259F-4EAC-B9FE-E1C5CED2000D}|GestionStock.Core.Configuration\\GestionStock.Core.Configuration.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.core.configuration\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04EDF0EB-259F-4EAC-B9FE-E1C5CED2000D}|GestionStock.Core.Configuration\\GestionStock.Core.Configuration.csproj|solutionrelative:gestionstock.core.configuration\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.core.dataef\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|solutionrelative:gestionstock.core.dataef\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.core.dataef\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}|GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj|solutionrelative:gestionstock.core.dataef\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B349970A-C9DE-4F64-AEDA-2727AA1F0E46}|GestionStock.Business\\GestionStock.Core.Business.csproj|c:\\users\\ronni\\onedrive\\escritorio\\copiatpiprog3codigogithub\\gestionstock.business\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,12 +59,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\TPIProg3GestionStock\\Program.cs",
+              "RelativeDocumentMoniker": "TPIProg3GestionStock\\Program.cs",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\TPIProg3GestionStock\\Program.cs",
+              "RelativeToolTip": "TPIProg3GestionStock\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T03:22:48.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAppGestionStock\\appsettings.json",
+              "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\appsettings.json",
+              "RelativeToolTip": "WebAppGestionStock\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAADWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T03:22:24.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CompraController.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\Controllers\\CompraController.cs",
               "RelativeDocumentMoniker": "WebAppGestionStock\\Controllers\\CompraController.cs",
               "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\Controllers\\CompraController.cs",
               "RelativeToolTip": "WebAppGestionStock\\Controllers\\CompraController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T03:01:30.72Z",
               "EditorCaption": ""
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.DataEF\\CategoriaRepository.cs",
               "RelativeDocumentMoniker": "GestionStock.Core.DataEF\\CategoriaRepository.cs",
@@ -84,25 +118,24 @@
               "RelativeToolTip": "GestionStock.Core.DataEF\\CategoriaRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:11:46.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T02:11:46.864Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.DataEF\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "GestionStock.Core.DataEF\\UsuarioRepository.cs",
               "ToolTip": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Core.DataEF\\UsuarioRepository.cs",
               "RelativeToolTip": "GestionStock.Core.DataEF\\UsuarioRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-24T02:11:20.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CategoriaBusiness.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Business\\CategoriaBusiness.cs",
               "RelativeDocumentMoniker": "GestionStock.Business\\CategoriaBusiness.cs",
@@ -110,12 +143,11 @@
               "RelativeToolTip": "GestionStock.Business\\CategoriaBusiness.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:10:21.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T02:10:21.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "UsuarioBusiness.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Business\\UsuarioBusiness.cs",
               "RelativeDocumentMoniker": "GestionStock.Business\\UsuarioBusiness.cs",
@@ -123,12 +155,11 @@
               "RelativeToolTip": "GestionStock.Business\\UsuarioBusiness.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T02:08:13.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T02:08:13.789Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "IngresarCompra.cshtml",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\Views\\Compra\\IngresarCompra.cshtml",
               "RelativeDocumentMoniker": "WebAppGestionStock\\Views\\Compra\\IngresarCompra.cshtml",
@@ -136,12 +167,11 @@
               "RelativeToolTip": "WebAppGestionStock\\Views\\Compra\\IngresarCompra.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T01:42:04.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T01:42:04.028Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\WebAppGestionStock\\Views\\Compra\\Index.cshtml",
               "RelativeDocumentMoniker": "WebAppGestionStock\\Views\\Compra\\Index.cshtml",
@@ -149,12 +179,11 @@
               "RelativeToolTip": "WebAppGestionStock\\Views\\Compra\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-24T01:44:47.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T01:44:47.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CompraBusiness.cs",
               "DocumentMoniker": "C:\\Users\\ronni\\OneDrive\\Escritorio\\CopiaTPIProg3CodigoGithub\\GestionStock.Business\\CompraBusiness.cs",
               "RelativeDocumentMoniker": "GestionStock.Business\\CompraBusiness.cs",
@@ -162,8 +191,7 @@
               "RelativeToolTip": "GestionStock.Business\\CompraBusiness.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-24T01:42:37.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-24T01:42:37.935Z"
             }
           ]
         }
