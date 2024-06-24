@@ -45,7 +45,7 @@ namespace GestionStock.Core.Business
 
             int stockProducto = productoResultConsultaStock.GetStockProducto(productoId);
 
-            if (stockProducto < cantidad)
+            if (stockProducto < cantidad || stockProducto <= 0)
             {
                 GenericResult stockInsuficiente = new GenericResult();
                 stockInsuficiente.HasError = true;
