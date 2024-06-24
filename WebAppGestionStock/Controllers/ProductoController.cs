@@ -32,6 +32,18 @@ namespace WebAppGestionStock.Controllers
 
             return View(model);
         }
+        [Route("api/producto/{produtoId}/stock/")]
+        public IActionResult Stock(int produtoId)
+        {
+            var productos = _productoBusiness.GetStockProducto(produtoId);
+
+            var model = new ProductoStockViewModel()
+            {
+                CantidadProductoStock = productos
+            };
+
+            return View(model);
+        }
         public IActionResult Deatils()
         {
             return View("DetailsInternal");

@@ -1,5 +1,4 @@
-﻿@using GestionStock.Core.Business
-@model CompraBusiness
+﻿@model CompraCreateModel
 @{
     ViewData["Title"] = "IngresarCompra";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -11,18 +10,21 @@
 <h6>Ingrese el ID del Producto de la Compra: </h6>
 <br>
 <br>
-<input type="number" id="InputProductoId">
+    <label asp-for="@Model.Compra.productoId"></label>
+    <input asp-for="@Model.Compra.productoId" id="InputProductoId">
 <br>
 <h6>Ingrese la fecha de la Compra: </h6>
 <br>
-<br>
-<input type="date" id="InputFecha">
+    <br>
+    <label asp-for="@Model.Compra.fecha"></label>
+    <input asp-for="@Model.Compra.fecha" id="InputFecha">
 <br>
 <h6>Ingrese la cantidad de unidades del Producto comprado: </h6>
 <br>
+    <br>
+    <label asp-for="@Model.Compra.cantidad"></label>
+    <input asp-for="@Model.Compra.cantidad" id="InputCantidad">
 <br>
-<input type="number" id="InputCantidad">
 <br>
-<br>
-    <button onclick="@{bool IsPostBack = true;}" type="submit">Agregar Compra</button>
+    <button type="submit">Agregar Compra</button>
 </form>

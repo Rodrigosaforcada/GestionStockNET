@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GestionStock.Core.DataEF
 {
-    internal class GestionStockContext : DbContext
+    public class GestionStockContext : DbContext
     {
         //private readonly string CONNECTIONSTRING = "Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=LAPTOPLOCAL1234\\SQLEXPRESS; Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;";
         

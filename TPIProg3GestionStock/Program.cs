@@ -220,8 +220,15 @@ while (volverPrincipal)
                         if (nuevoProductoNombre != "" || nuevoProductoNombre != null
                             && nuevoProductoCatId != 0 || nuevoProductoNombre != null)
                         {
-                            productoBusiness.CreateProducto(nuevoProductoNombre, nuevoProductoCatId);
-                            Console.WriteLine($"Nuevo producto: {nuevoProductoNombre}.");
+                            var resultado = productoBusiness.CreateProducto(nuevoProductoNombre, nuevoProductoCatId);
+                            if (resultado.HasError)
+                            {
+                                Console.WriteLine($"{resultado.Message}.");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Nuevo producto: {nuevoProductoNombre}");
+                            }
                         }
                     }
                     catch (Exception ex)
