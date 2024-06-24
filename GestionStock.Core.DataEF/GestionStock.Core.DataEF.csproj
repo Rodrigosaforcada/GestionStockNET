@@ -13,6 +13,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<ProjectReference Include="..\GestionStock.Core.Configuration\GestionStock.Core.Configuration.csproj" />
 		<ProjectReference Include="..\GestionStock.Entities\GestionStock.Core.Entities.csproj" />
 	</ItemGroup>
 

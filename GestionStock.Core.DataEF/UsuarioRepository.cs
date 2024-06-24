@@ -1,19 +1,21 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Configuration;
+using GestionStock.Core.Entities;
 
 namespace GestionStock.Core.DataEF
 {
     public class UsuarioRepository
     {
-        public UsuarioRepository()
+        private readonly Config _config;
+        public UsuarioRepository(Config config)
         {
-
+            _config = config;
         }
 
         public UsuarioResult GetAll()
         {
             var result = new UsuarioResult();
 
-            using(var db = new GestionStockContext())
+            using(var db = new GestionStockContext(_config))
             {
                 result.Usuarios = db.Usuarios.ToList();
             }
@@ -24,7 +26,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var usuario = from us in db.Usuarios
                               where us.usuarioId == usuarioId
@@ -41,7 +43,7 @@ namespace GestionStock.Core.DataEF
         }
         public Usuario GetAsync(int usuarioId)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var usuario = from us in db.Usuarios
                               where us.usuarioId == usuarioId
@@ -52,7 +54,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Usuario usuario)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Attach(usuario);
                 db.Entry(usuario).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -65,7 +67,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateUsuario(Usuario usuario)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Add(usuario);
                 db.SaveChanges();

@@ -1,4 +1,5 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Configuration;
+using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,17 @@ namespace GestionStock.Core.DataEF
 {
     public class CompraRepository
     {
-        public CompraRepository() { }
+        private readonly Config _config;
+        public CompraRepository(Config config) 
+        { 
+            _config = config; 
+        }
 
         public CompraResult GetAll()
         {
             var result = new CompraResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 result.Compras = db.Compras.ToList();
             }
@@ -24,7 +29,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateCompra(Compra compra)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Add(compra);
                 db.SaveChanges();
@@ -35,7 +40,7 @@ namespace GestionStock.Core.DataEF
         }
         public Compra GetAsync(int compraId)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var compra = from comp in db.Compras
                                where comp.compraId == compraId
@@ -46,7 +51,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Compra compra)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Attach(compra);
                 db.Entry(compra).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -61,7 +66,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var compra = from comp in db.Compras
                              where comp.compraId == compraId

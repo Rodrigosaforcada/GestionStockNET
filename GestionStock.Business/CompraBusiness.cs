@@ -9,10 +9,10 @@ namespace GestionStock.Core.Business
 {
     public class CompraBusiness
     {
-        private Core.DataEF.CompraRepository _compraRepositoryEF;
-        public CompraBusiness()
+        private readonly GestionStock.Core.DataEF.CompraRepository _compraRepositoryEF;
+        public CompraBusiness(GestionStock.Core.DataEF.CompraRepository compraRepositoryEF)
         {
-            _compraRepositoryEF = new GestionStock.Core.DataEF.CompraRepository();
+            _compraRepositoryEF = compraRepositoryEF;
         }
         public CompraResult GetAll()
         {

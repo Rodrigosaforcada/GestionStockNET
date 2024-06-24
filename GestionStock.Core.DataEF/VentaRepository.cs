@@ -1,4 +1,5 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Configuration;
+using GestionStock.Core.Entities;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,17 @@ namespace GestionStock.Core.DataEF
 {
     public class VentaRepository
     {
-        public VentaRepository() { }
+        private readonly Config _config;
+        public VentaRepository(Config config) 
+        {
+            _config = config;
+        }
 
         public VentaResult GetAll()
         {
             var result = new VentaResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 result.Ventas = db.Ventas.ToList();
             }
@@ -25,7 +30,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateCompra(Venta venta)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Add(venta);
                 db.SaveChanges();
@@ -36,7 +41,7 @@ namespace GestionStock.Core.DataEF
         }
         public Venta GetAsync(int ventaId)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var venta = from vent in db.Ventas
                              where vent.ventaId == ventaId
@@ -47,7 +52,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Venta venta)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Attach(venta);
                 db.Entry(venta).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -62,7 +67,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var venta = from vent in db.Ventas
                             where vent.ventaId == ventaId

@@ -1,0 +1,17 @@
+﻿@using GestionStock.Core.Entities
+@model UsuarioListViewModel
+@{
+    ViewData["Title"] = Model.Nombre;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Nombre</h1>
+
+<ul>
+    @foreach (var usu in Model.UsuariosResult.Usuarios)
+    {
+        <li>Usuario id: @usu.nombre (@usu.usuarioId) </li>
+    }
+
+</ul>
+

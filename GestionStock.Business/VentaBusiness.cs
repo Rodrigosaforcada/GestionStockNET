@@ -9,10 +9,10 @@ namespace GestionStock.Core.Business
 {
     public class VentaBusiness
     {
-        private Core.DataEF.VentaRepository _ventaRepositoryEF;
-        public VentaBusiness()
+        private readonly Core.DataEF.VentaRepository _ventaRepositoryEF;
+        public VentaBusiness(Core.DataEF.VentaRepository ventaRepositoryEF)
         {
-            _ventaRepositoryEF = new GestionStock.Core.DataEF.VentaRepository();
+            _ventaRepositoryEF = ventaRepositoryEF;
         }
         public VentaResult GetAll()
         {

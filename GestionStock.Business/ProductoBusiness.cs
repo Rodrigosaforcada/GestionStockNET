@@ -9,10 +9,10 @@ namespace GestionStock.Core.Business
 {
     public class ProductoBusiness
     {
-        private Core.DataEF.ProductoRepository _productoRepositoryEF;
-        public ProductoBusiness()
+        private readonly Core.DataEF.ProductoRepository _productoRepositoryEF;
+        public ProductoBusiness(Core.DataEF.ProductoRepository productoRepositoryEF)
         {
-            _productoRepositoryEF = new GestionStock.Core.DataEF.ProductoRepository();
+            _productoRepositoryEF = productoRepositoryEF;
         }
         public ProductoResult GetAll()
         {

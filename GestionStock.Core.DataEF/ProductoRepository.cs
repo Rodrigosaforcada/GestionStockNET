@@ -1,4 +1,5 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Configuration;
+using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,13 +10,17 @@ namespace GestionStock.Core.DataEF
 {
     public class ProductoRepository
     {
-        public ProductoRepository() { }
+        private readonly Config _config;
+        public ProductoRepository(Config config) 
+        { 
+            _config = config; 
+        }
 
         public ProductoResult GetAll()
         {
             var result = new ProductoResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 result.Productos = db.Productos.ToList();
             }
@@ -24,7 +29,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateProducto(Producto producto)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Add(producto);
                 db.SaveChanges();
@@ -35,7 +40,7 @@ namespace GestionStock.Core.DataEF
         }
         public Producto GetAsync(int productoId)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var producto = from prod in db.Productos
                                where prod.productoId == productoId
@@ -46,7 +51,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Producto producto)
         {
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 db.Attach(producto);
                 db.Entry(producto).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -61,7 +66,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext())
+            using (var db = new GestionStockContext(_config))
             {
                 var producto = from prod in db.Productos
                                 where prod.productoId == productoId

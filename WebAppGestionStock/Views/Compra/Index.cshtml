@@ -1,0 +1,16 @@
+﻿@using GestionStock.Core.Entities
+@model CompraListViewModel
+@{
+    ViewData["Title"] = Model.Titulo;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Titulo</h1>
+
+<ul>
+    @foreach (var comp in Model.ComprasResult.Compras)
+    {
+        <li>Fecha de la Compra: @comp.fecha (@comp.compraId) Producto: @comp.productoId</li>
+    }
+
+</ul>

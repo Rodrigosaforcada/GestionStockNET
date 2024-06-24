@@ -1,0 +1,16 @@
+﻿@using GestionStock.Core.Entities
+@model VentaListViewModel
+@{
+    ViewData["Title"] = Model.Titulo;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Model.Titulo</h1>
+
+<ul>
+    @foreach (var vent in Model.VentaResult.Ventas)
+    {
+        <li>Fecha de la Venta: @vent.fecha (@vent.ventaId) Producto: @vent.productoId</li>
+    }
+
+</ul>
