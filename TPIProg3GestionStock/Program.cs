@@ -374,8 +374,15 @@ while (volverPrincipal)
                             && nuevaVentaCantidad != 0 || nuevaVentaCantidad != null
                             && nuevaVentaUsuarioId != 0 || nuevaVentaUsuarioId != null)
                         {
-                            ventaBusiness.CreateVenta(DateTime.Now, nuevaVentaProductoId, nuevaVentaCantidad, nuevaVentaUsuarioId);
-                            Console.WriteLine($"Venta agregada.");
+                            var resultado = ventaBusiness.CreateVenta(DateTime.Now, nuevaVentaProductoId, nuevaVentaCantidad, nuevaVentaUsuarioId);
+                            if (resultado.HasError)
+                            {
+                                Console.WriteLine($"{resultado.Message}");
+                            }
+                            else
+                            {
+                                Console.WriteLine($"Venta agregada.");
+                            }
                         }
                     }
                     catch (Exception ex)

@@ -1,4 +1,5 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Configuration;
+using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,24 @@ namespace GestionStock.Core.Business
             nuevaVenta.ventaId = ultimoId + 1;
             nuevaVenta.fecha = fecha;
             nuevaVenta.productoId = productoId;
+
+            var _config = new Config();
+            _config.ConnectionString = "Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=LAPTOPLOCAL1234\\SQLEXPRESS; Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;";
+
+            var _productoRepositoryEF = new GestionStock.Core.DataEF.ProductoRepository(_config);
+
+            ProductoBusiness productoResultConsultaStock = new ProductoBusiness(_productoRepositoryEF);
+
+            int stockProducto = productoResultConsultaStock.GetStockProducto(productoId);
+
+            if (stockProducto < cantidad)
+            {
+                GenericResult stockInsuficiente = new GenericResult();
+                stockInsuficiente.HasError = true;
+                stockInsuficiente.Message = "El stock existente es insuficiente para realizar la venta,\nelija una cantidad igual o inferior a " + stockProducto + ".";
+                return stockInsuficiente;
+            }
+
             nuevaVenta.cantidad = cantidad;
             nuevaVenta.usuarioId = usuarioId;
 
