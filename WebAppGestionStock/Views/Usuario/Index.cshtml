@@ -1,14 +1,12 @@
-﻿@using GestionStock.Core.Entities
-@model UsuarioListViewModel
+﻿@model List<GestionStock.Core.Entities.Usuario>;
 @{
-    ViewData["Title"] = Model.Nombre;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>@Model.Nombre</h1>
+<h1>USUARIOS</h1>
 
 <ul>
-    @foreach (var usu in Model.UsuariosResult.Usuarios)
+    @foreach (var usu in Model)
     {
         <li>Usuario id: @usu.nombre (@usu.usuarioId) </li>
     }

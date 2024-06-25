@@ -9,10 +9,10 @@ namespace GestionStock.Core.Business
 {
     public class CompraBusiness
     {
-        private readonly GestionStock.Core.DataEF.CompraRepository _compraRepositoryEF;
-        public CompraBusiness(GestionStock.Core.DataEF.CompraRepository compraRepositoryEF)
+        private Core.DataEF.CompraRepository _compraRepositoryEF;
+        public CompraBusiness()
         {
-            _compraRepositoryEF = compraRepositoryEF;
+            _compraRepositoryEF = new GestionStock.Core.DataEF.CompraRepository();
         }
         public CompraResult GetAll()
         {
@@ -32,19 +32,6 @@ namespace GestionStock.Core.Business
                 }
             }
             nuevaCompra.compraId = ultimoId + 1;
-
-            DateTime fechaIngresada = new DateTime(fecha.Year, fecha.Month, fecha.Day);
-            DateTime fechaActual = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day);
-            TimeSpan diferenciaDeDias = fechaIngresada - fechaActual;
-            double dif = -7.0;
-            if (diferenciaDeDias.TotalDays < dif || diferenciaDeDias.TotalDays > 0)
-            {
-                GenericResult diasError = new GenericResult();
-                diasError.HasError = true;
-                diasError.Message = "No se puede asignar una fecha con mas de 7 dias de anterioridad o que sea posterior al dia de hoy.";
-                return diasError;
-            }
-
             nuevaCompra.fecha = fecha;
             nuevaCompra.productoId = productoId;
             nuevaCompra.cantidad = cantidad;

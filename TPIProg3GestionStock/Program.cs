@@ -1,22 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using GestionStock.Core.Business;
-using GestionStock.Core.Configuration;
 using GestionStock.Core.Entities;
 
-var _config = new Config();
-_config.ConnectionString = "Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=LAPTOPLOCAL1234\\SQLEXPRESS; Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;";
-
-var _usuarioRepositoryEF = new GestionStock.Core.DataEF.UsuarioRepository(_config);
-var _categoriaRepositoryEF = new GestionStock.Core.DataEF.CategoriaRepository(_config);
-var _productoRepositoryEF = new GestionStock.Core.DataEF.ProductoRepository(_config);
-var _compraRepositoryEF = new GestionStock.Core.DataEF.CompraRepository(_config);
-var _ventaRepositoryEF = new GestionStock.Core.DataEF.VentaRepository(_config);
-
-var usuarioBusiness = new UsuarioBusiness(_usuarioRepositoryEF);
-var categoriaBusiness = new CategoriaBusiness(_categoriaRepositoryEF);
-var productoBusiness = new ProductoBusiness(_productoRepositoryEF);
-var compraBusiness = new CompraBusiness(_compraRepositoryEF);
-var ventaBusiness = new VentaBusiness(_ventaRepositoryEF);
+var usuarioBusiness = new UsuarioBusiness();
+var categoriaBusiness = new CategoriaBusiness();
+var productoBusiness = new ProductoBusiness();
+var compraBusiness = new CompraBusiness();
+var ventaBusiness = new VentaBusiness();
 
 bool volverPrincipal = true;
 while (volverPrincipal)
@@ -220,15 +210,8 @@ while (volverPrincipal)
                         if (nuevoProductoNombre != "" || nuevoProductoNombre != null
                             && nuevoProductoCatId != 0 || nuevoProductoNombre != null)
                         {
-                            var resultado = productoBusiness.CreateProducto(nuevoProductoNombre, nuevoProductoCatId);
-                            if (resultado.HasError)
-                            {
-                                Console.WriteLine($"{resultado.Message}.");
-                            }
-                            else
-                            {
-                                Console.WriteLine($"Nuevo producto: {nuevoProductoNombre}");
-                            }
+                            productoBusiness.CreateProducto(nuevoProductoNombre, nuevoProductoCatId);
+                            Console.WriteLine($"Nuevo producto: {nuevoProductoNombre}.");
                         }
                     }
                     catch (Exception ex)
@@ -295,27 +278,13 @@ while (volverPrincipal)
                         int nuevaCompraCantidad = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("Indique el usuario que realizo la Compra: ");
                         int nuevaCompraUsuarioId = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Indique el dia que realizo la Compra: ");
-                        int nuevaCompraDia = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Indique el mes que realizo la Compra: ");
-                        int nuevaCompraMes = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Indique el año que realizo la Compra: ");
-                        int nuevaCompraAno = Convert.ToInt32(Console.ReadLine());
 
                         if (nuevaCompraProductoId != 0 || nuevaCompraProductoId != null
                             && nuevaCompraCantidad != 0 || nuevaCompraCantidad != null
                             && nuevaCompraUsuarioId != 0 || nuevaCompraUsuarioId != null)
                         {
-                            DateTime fechaIngresada = new DateTime(nuevaCompraAno, nuevaCompraMes, nuevaCompraDia);
-                            var resultado = compraBusiness.CreateCompra(fechaIngresada, nuevaCompraProductoId, nuevaCompraCantidad, nuevaCompraUsuarioId);
-                            if (resultado.HasError)
-                            {
-                                Console.WriteLine($"{resultado.Message}");
-                            }
-                            else
-                            {
-                                Console.WriteLine($"Compra agregada.");
-                            }
+                            compraBusiness.CreateCompra(DateTime.Now, nuevaCompraProductoId, nuevaCompraCantidad, nuevaCompraUsuarioId);
+                            Console.WriteLine($"Compra agregada.");
                         }
                     }
                     catch (Exception ex)
@@ -388,15 +357,8 @@ while (volverPrincipal)
                             && nuevaVentaCantidad != 0 || nuevaVentaCantidad != null
                             && nuevaVentaUsuarioId != 0 || nuevaVentaUsuarioId != null)
                         {
-                            var resultado = ventaBusiness.CreateVenta(DateTime.Now, nuevaVentaProductoId, nuevaVentaCantidad, nuevaVentaUsuarioId);
-                            if (resultado.HasError)
-                            {
-                                Console.WriteLine($"{resultado.Message}");
-                            }
-                            else
-                            {
-                                Console.WriteLine($"Venta agregada.");
-                            }
+                            ventaBusiness.CreateVenta(DateTime.Now, nuevaVentaProductoId, nuevaVentaCantidad, nuevaVentaUsuarioId);
+                            Console.WriteLine($"Venta agregada.");
                         }
                     }
                     catch (Exception ex)
@@ -441,7 +403,7 @@ while (volverPrincipal)
                     break;
             }
 
-        break;
+            break;
     }
 }
 

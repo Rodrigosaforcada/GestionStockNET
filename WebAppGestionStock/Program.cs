@@ -1,18 +1,10 @@
 using GestionStock.Core.Business;
-using GestionStock.Core.Configuration;
 using GestionStock.Core.DataEF;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//var connectionString = builder.Configuration.Get("GestionStockConnectionString");
-var connectionString = builder.Configuration.GetConnectionString("GestionStockConnectionString");
 
-var config = new GestionStock.Core.Configuration.Config()
-{
-    ConnectionString = connectionString
-};
-
-builder.Services.AddScoped<Config>(p => { return config; });
 
 builder.Services.AddScoped<UsuarioRepository>();
 builder.Services.AddScoped<UsuarioBusiness>();
@@ -44,11 +36,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapControllerRoute(
     name: "ProductoStock",
-    pattern: "{controller=Producto}/{action=Stock}/{productoId?}");
+    pattern: "{controller=Producto}/{action=Index}/{productoId?}");
 
 app.Run();

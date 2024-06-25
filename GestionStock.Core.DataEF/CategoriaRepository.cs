@@ -1,5 +1,4 @@
-﻿using GestionStock.Core.Configuration;
-using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +9,13 @@ namespace GestionStock.Core.DataEF
 {
     public class CategoriaRepository
     {
-        private readonly Config _config;
-        public CategoriaRepository(Config config) 
-        {
-            _config = config;
-        }
+        public CategoriaRepository() { }
 
         public CategoriaResult GetAll()
         {
             var result = new CategoriaResult();
 
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 result.Categorias = db.Categorias.ToList();
             }
@@ -29,7 +24,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateCategoria(Categoria categoria)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 db.Add(categoria);
                 db.SaveChanges();
@@ -40,7 +35,7 @@ namespace GestionStock.Core.DataEF
         }
         public Categoria GetAsync(int categoriaId)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 var categoria = from cat in db.Categorias
                               where cat.categoriaId == categoriaId
@@ -51,7 +46,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Categoria categoria)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 db.Attach(categoria);
                 db.Entry(categoria).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -66,7 +61,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 var categoria = from cat in db.Categorias
                               where cat.categoriaId == categoriaId

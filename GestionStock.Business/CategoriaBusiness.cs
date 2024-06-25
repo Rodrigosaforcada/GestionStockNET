@@ -10,10 +10,10 @@ namespace GestionStock.Core.Business
 {
     public class CategoriaBusiness
     {
-        private readonly Core.DataEF.CategoriaRepository _categoriaRepositoryEF;
-        public CategoriaBusiness(Core.DataEF.CategoriaRepository categoriaRepositoryEF)
+        private Core.DataEF.CategoriaRepository _categoriaRepositoryEF;
+        public CategoriaBusiness()
         {
-            _categoriaRepositoryEF = categoriaRepositoryEF;
+            _categoriaRepositoryEF = new GestionStock.Core.DataEF.CategoriaRepository();
         }
         public CategoriaResult GetAll()
         {

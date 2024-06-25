@@ -6,6 +6,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
   <ItemGroup>
     <ProjectReference Include="..\GestionStock.Core.DataEF\GestionStock.Core.DataEF.csproj" />
     <ProjectReference Include="..\GestionStock.Core.Data\GestionStock.Core.Data.csproj" />

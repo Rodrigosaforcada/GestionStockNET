@@ -1,16 +1,34 @@
-﻿@using GestionStock.Core.Entities
-@model VentaListViewModel
+﻿@model List<GestionStock.Core.Entities.Venta>;
 @{
-    ViewData["Title"] = Model.Titulo;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>@Model.Titulo</h1>
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h1>LISTA DE VENTAS</h1>
+        <a asp-controller="Venta" asp-action="IngresarVenta" class="btn btn-primary mb-3">NUEVA VENTA</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
 
-<ul>
-    @foreach (var vent in Model.VentaResult.Ventas)
-    {
-        <li>Fecha de la Venta: @vent.fecha (@vent.ventaId) Producto: @vent.productoId</li>
-    }
+                    <th>Fecha de venta</th>
+                    <th>Id Venta</th>
+                    <th>Id producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var vent in Model)
+                {
+                    <tr>
 
-</ul>
+                        <td>@vent.fecha </td>
+                        <td>@vent.ventaId</td>
+                        <td>@vent.productoId</td>
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>

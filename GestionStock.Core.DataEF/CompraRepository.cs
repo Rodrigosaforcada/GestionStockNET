@@ -1,5 +1,4 @@
-﻿using GestionStock.Core.Configuration;
-using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,17 +9,13 @@ namespace GestionStock.Core.DataEF
 {
     public class CompraRepository
     {
-        private readonly Config _config;
-        public CompraRepository(Config config) 
-        { 
-            _config = config; 
-        }
+        public CompraRepository() { }
 
         public CompraResult GetAll()
         {
             var result = new CompraResult();
 
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 result.Compras = db.Compras.ToList();
             }
@@ -29,7 +24,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult CreateCompra(Compra compra)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 db.Add(compra);
                 db.SaveChanges();
@@ -40,7 +35,7 @@ namespace GestionStock.Core.DataEF
         }
         public Compra GetAsync(int compraId)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 var compra = from comp in db.Compras
                                where comp.compraId == compraId
@@ -51,7 +46,7 @@ namespace GestionStock.Core.DataEF
         }
         public GenericResult UpdateAsync(Compra compra)
         {
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 db.Attach(compra);
                 db.Entry(compra).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
@@ -66,7 +61,7 @@ namespace GestionStock.Core.DataEF
         {
             var result = new GenericResult();
 
-            using (var db = new GestionStockContext(_config))
+            using (var db = new GestionStockContext())
             {
                 var compra = from comp in db.Compras
                              where comp.compraId == compraId
@@ -80,6 +75,15 @@ namespace GestionStock.Core.DataEF
             result.IsSuccessful = true;
 
             return result;
+        }
+        public int GetTotalComprasPorProducto(int productoId)
+        {
+            using (var db = new GestionStockContext())
+            {
+                return db.Compras
+                    .Where(c => c.productoId == productoId)
+                    .Sum(c => c.cantidad);
+            }
         }
     }
 }

@@ -1,50 +1,34 @@
 using GestionStock.Core.Business;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebAppGestionStock.Models;
+using GestionStock.Core.Entities;
 
 namespace WebAppGestionStock.Controllers
+
 {
     public class UsuarioController : Controller
     {
-        private readonly ILogger<UsuarioController> _logger;
         private readonly UsuarioBusiness _usuarioBusiness;
 
-        public UsuarioController(UsuarioBusiness usuarioBusiness, ILogger<UsuarioController> logger)
+        public UsuarioController(UsuarioBusiness usuarioBusiness)
         {
-            _logger = logger;
-            _usuarioBusiness = usuarioBusiness;
-
-            //_usuarioBusiness = new UsuarioBusiness();
+           _usuarioBusiness = usuarioBusiness;
         }
 
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Lista()
         {
-            var usuarios = _usuarioBusiness.GetAll();
-
-            var model = new UsuarioListViewModel()
+            List<Usuario> usuarios = _usuarioBusiness.GetAll().Usuarios;
+            if (usuarios == null)
             {
-                Nombre = "Usuarios del Sistema Gestion de Stock",
-                Cantidad = $"Cantidad de Usuarios: {usuarios.Usuarios.Count}",
-                UsuariosResult = usuarios
-            };
+                // Manejar el caso cuando usuarioResult  es null
+                return View(new List<Usuario>()); // Pasar una lista vacía a la vista
+            }
+            return View(usuarios);
 
-            return View(model);
-        }
-        public IActionResult Deatils()
-        {
-            return View("DetailsInternal");
+
+
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

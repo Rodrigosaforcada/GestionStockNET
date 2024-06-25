@@ -1,4 +1,5 @@
 using GestionStock.Core.Business;
+using GestionStock.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebAppGestionStock.Models;
@@ -7,46 +8,53 @@ namespace WebAppGestionStock.Controllers
 {
     public class CompraController : Controller
     {
-        private readonly ILogger<CompraController> _logger;
         private readonly CompraBusiness _compraBusiness;
 
-        public CompraController(CompraBusiness compraBusiness, ILogger<CompraController> logger)
+        public CompraController(CompraBusiness compraBusiness)
         {
-            _logger = logger;
             _compraBusiness = compraBusiness;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            var compras = _compraBusiness.GetAll();
-
-            var model = new CompraListViewModel()
+            List<Compra> compras = _compraBusiness.GetAll().Compras;
+            if (compras == null)
             {
-                Titulo = "Compras en el Sistema Gestion de Stock",
-                Cantidad = $"Cantidad de Compras: {compras.Compras.Count}",
-                ComprasResult = compras
-            };
-
-            return View(model);
+                // Manejar el caso cuando ventaResult  es null
+                return View(new List<Compra>()); // Pasar una lista vacía a la vista
+            }
+            return View(compras);
         }
+
+        [HttpGet]
         public IActionResult IngresarCompra()
         {
-            return View("IngresarCompra");
-        }
-        public IActionResult Deatils()
-        {
-            return View("DetailsInternal");
-        }
-
-        public IActionResult Privacy()
-        {
+            var currentDateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            ViewBag.CurrentDateTime = currentDateTime;
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        public async Task<IActionResult> IngresarCompra(DateTime fecha, int productoId, int cantidad, int usuarioId)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            DateTime fechaActual = DateTime.Now.Date;
+            DateTime fechaMinima = fechaActual.AddDays(-7);
+
+            if (fecha.Date < fechaMinima || fecha.Date > fechaActual)
+            {
+                TempData["ErrorMessage"] = "No se puede asignar una fecha con más de 7 días de anterioridad o que sea posterior al día de hoy.";
+                await Task.Delay(10000);
+                return RedirectToAction(nameof(IngresarCompra));
+            }
+
+            GenericResult result = _compraBusiness.CreateCompra(fecha, productoId, cantidad, usuarioId);
+
+            TempData["SuccessMessage"] = "Compra creada exitosamente.";
+            await Task.Delay(10000);
+            return RedirectToAction(nameof(Index));
         }
+       
+        
     }
 }

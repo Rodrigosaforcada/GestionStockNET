@@ -1,30 +1,46 @@
-﻿@model CompraCreateModel
+﻿@model GestionStock.Core.Entities.Compra;
 @{
     ViewData["Title"] = "IngresarCompra";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Ingresar Compra</h1>
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <div>
+            @if (TempData["SucessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
 
-<form method="post">
-<h6>Ingrese el ID del Producto de la Compra: </h6>
-<br>
-<br>
-    <label asp-for="@Model.Compra.productoId"></label>
-    <input asp-for="@Model.Compra.productoId" id="InputProductoId">
-<br>
-<h6>Ingrese la fecha de la Compra: </h6>
-<br>
-    <br>
-    <label asp-for="@Model.Compra.fecha"></label>
-    <input asp-for="@Model.Compra.fecha" id="InputFecha">
-<br>
-<h6>Ingrese la cantidad de unidades del Producto comprado: </h6>
-<br>
-    <br>
-    <label asp-for="@Model.Compra.cantidad"></label>
-    <input asp-for="@Model.Compra.cantidad" id="InputCantidad">
-<br>
-<br>
-    <button type="submit">Agregar Compra</button>
-</form>
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+        </div>
+        <h2>Nueva compra</h2>
+        <form asp-controller="Compra" asp-action="IngresarCompra" method="post">
+            <div class="mb-3">
+                <label asp-for="fecha"></label>
+                <input asp-for="fecha" id="InputFecha">
+            </div>
+            <div class="mb-3">
+                <label asp-for="productoId"></label>
+                <input asp-for="productoId" id="InputProductoId">
+            </div>
+            <div class="mb-3">
+                <label asp-for="cantidad"></label>
+                <input asp-for="cantidad" id="InputCantidad">
+
+            </div>
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <a asp-controller="Compra" asp-action="Index" class="btn btn-primary">Volver</a>
+            </div>
+
+        </form>
+        
+</div>

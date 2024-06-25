@@ -1,48 +1,70 @@
 using GestionStock.Core.Business;
+using GestionStock.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using WebAppGestionStock.Models;
+
 
 namespace WebAppGestionStock.Controllers
 {
     public class VentaController : Controller
     {
-        private readonly ILogger<VentaController> _logger;
         private readonly VentaBusiness _ventaBusiness;
+        private readonly ProductoBusiness _productoBusiness;
 
-        public VentaController(VentaBusiness ventaBusiness, ILogger<VentaController> logger)
+        public VentaController(VentaBusiness ventaBusiness)
         {
-            _logger = logger;
             _ventaBusiness = ventaBusiness;
+            _productoBusiness = new ProductoBusiness();
         }
 
+
+        [HttpGet]
         public IActionResult Index()
         {
-            var ventas = _ventaBusiness.GetAll();
-
-            var model = new VentaListViewModel()
+            List<Venta> ventas = _ventaBusiness.GetAll().Ventas;
+            if (ventas == null)
             {
-                Titulo = "Ventas del Sistema Gestion de Stock",
-                Cantidad = $"Cantidad de Ventas: {ventas.Ventas.Count}",
-                VentaResult = ventas
-            };
+                // Manejar el caso cuando ventaResult  es null
+                return View(new List<Venta>()); // Pasar una lista vacía a la vista
+            }
+            return View(ventas);
 
-            return View(model);
-        }
-        public IActionResult Deatils()
-        {
-            return View("DetailsInternal");
+
+
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult IngresarVenta()
         {
+            var currentDateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            ViewBag.CurrentDateTime = currentDateTime;
+
             return View();
+
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        public async Task<IActionResult> IngresarVenta(DateTime fecha, int productoId, int cantidad, int usuarioId)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var currentDateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            ViewBag.CurrentDateTime = currentDateTime;
+            // Calcular el stock actual
+            int stockDisponible = _productoBusiness.GetStockProducto(productoId);
+
+            // Verificar si hay suficiente stock para la venta
+            if (cantidad > stockDisponible)
+            {
+            TempData["ErrorMessage"] = "No hay suficiente stock disponible para realizar esta venta.";
+                await Task.Delay(10000);
+                return View(nameof(IngresarVenta)); 
+            }
+            var result = _ventaBusiness.CreateVenta(fecha, productoId, cantidad, usuarioId);
+
+            TempData["SuccessMessage"] = "Venta realizada con éxito.";
+            await Task.Delay(10000);
+            return RedirectToAction(nameof(Index));
+
         }
     }
 }

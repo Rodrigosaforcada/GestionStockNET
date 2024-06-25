@@ -8,32 +8,27 @@ namespace WebAppGestionStock.Controllers
 {
     public class ProductoController : Controller
     {
-        private readonly ILogger<ProductoController> _logger;
-        private readonly ProductoBusiness _productoBusiness;
+            private readonly ProductoBusiness _productoBusiness;
 
-        public ProductoController(ProductoBusiness productoBusiness, ILogger<ProductoController> logger)
-        {
-            _logger = logger;
-            _productoBusiness = productoBusiness;
+            public ProductoController(ProductoBusiness productoBusiness)
+            {
+                _productoBusiness = productoBusiness;
+            }
 
-            //_usuarioBusiness = new UsuarioBusiness();
-        }
-
+            [HttpGet]
         public IActionResult Index()
         {
-            var productos = _productoBusiness.GetAll();
-
-            var model = new ProductoListViewModel()
+            List<Producto> productos = _productoBusiness.GetAll().Productos;
+            if (productos == null)
             {
-                Nombre = "Productos del Sistema Gestion de Stock",
-                Cantidad = $"Cantidad de Productos: {productos.Productos.Count}",
-                ProductosResult = productos
-            };
-
-            return View(model);
+                // Manejar el caso cuando productoResult o productoResult.Productos es null
+                return View(new List<Producto>()); // Pasar una lista vacía a la vista
+            }
+            return View(productos);
         }
+    
         [Route("api/producto/{produtoId}/stock/")]
-        public IActionResult Stock(int produtoId)
+       public IActionResult Stock(int produtoId)
         {
             var productos = _productoBusiness.GetStockProducto(produtoId);
 
@@ -44,16 +39,7 @@ namespace WebAppGestionStock.Controllers
 
             return View(model);
         }
-        public IActionResult Deatils()
-        {
-            return View("DetailsInternal");
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
@@ -61,3 +47,4 @@ namespace WebAppGestionStock.Controllers
         }
     }
 }
+

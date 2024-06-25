@@ -1,16 +1,33 @@
-﻿@using GestionStock.Core.Entities
-@model ProductoListViewModel
-@{
-    ViewData["Title"] = Model.Nombre;
+﻿@model List<GestionStock.Core.Entities.Producto>;
+@{ 
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h1>PRODUCTOS</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
 
-<h1>@Model.Nombre</h1>
+                    <th>Nombre</th>
+                    <th>Id producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var prod in Model)
+                {
+                    <tr>
 
-<ul>
-    @foreach (var prod in Model.ProductosResult.Productos)
-    {
-        <li>Nombre del Producto: @prod.nombre (@prod.productoId)</li>
-    }
+                        <td>@prod.nombre </td>
+                        <td>@prod.productoId</td>
+                        
 
-</ul>
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+

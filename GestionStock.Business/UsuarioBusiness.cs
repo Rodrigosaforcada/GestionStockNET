@@ -8,11 +8,11 @@ namespace GestionStock.Core.Business
 {
     public class UsuarioBusiness
     {
-        //private GestionStock.Core.Data.UsuarioRepository _usuarioRepository;
-        private readonly GestionStock.Core.DataEF.UsuarioRepository _usuarioRepositoryEF;
-        public UsuarioBusiness(GestionStock.Core.DataEF.UsuarioRepository usuarioRepositoryEF) {
-            //_usuarioRepository = new GestionStock.Core.Data.UsuarioRepository();
-            _usuarioRepositoryEF = usuarioRepositoryEF;
+        private GestionStock.Core.Data.UsuarioRepository _usuarioRepository;
+        private GestionStock.Core.DataEF.UsuarioRepository _usuarioRepositoryEF;
+        public UsuarioBusiness() {
+            _usuarioRepository = new GestionStock.Core.Data.UsuarioRepository();
+            _usuarioRepositoryEF = new GestionStock.Core.DataEF.UsuarioRepository();
         }
         public UsuarioResult GetAll()
         {
@@ -20,10 +20,10 @@ namespace GestionStock.Core.Business
         }
 
         //ADO.NET
-        //public UsuarioResult GetAllv1()
-        //{
-        //    return _usuarioRepository.GetAll();
-        //}
+        public UsuarioResult GetAllv1()
+        {
+            return _usuarioRepository.GetAll();
+        }
         //Entity Framework
         public UsuarioResult GetAllv2()
         {

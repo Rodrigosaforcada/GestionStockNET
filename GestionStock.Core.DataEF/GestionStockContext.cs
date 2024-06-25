@@ -1,5 +1,4 @@
-﻿using GestionStock.Core.Configuration;
-using GestionStock.Core.Entities;
+﻿using GestionStock.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace GestionStock.Core.DataEF
 {
-    public class GestionStockContext : DbContext
+    internal class GestionStockContext : DbContext
     {
-        //private readonly string CONNECTIONSTRING = "Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=LAPTOPLOCAL1234\\SQLEXPRESS; Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;";
-        
-        private readonly Config _config;
-        public GestionStockContext(Config config)
+        public GestionStockContext()
         {
-            _config = config;
+        }
+
+        public GestionStockContext(DbContextOptions<GestionStockContext> options) : base(options)
+        {
         }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
@@ -27,7 +26,11 @@ namespace GestionStock.Core.DataEF
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(_config.ConnectionString);
+            if (!optionsBuilder.IsConfigured)
+            {
+                // Aquí se configura la cadena de conexión si no está configurada
+                optionsBuilder.UseSqlServer("Persist Security Info=True;Initial Catalog=Prog3RecurGoya;Data Source=(local); Application Name=DemoApp;Integrated Security=True;TrustServerCertificate=True;");
+            }
         }
     }
 }
