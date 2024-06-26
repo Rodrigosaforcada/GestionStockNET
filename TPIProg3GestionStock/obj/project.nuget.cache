@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cENgvYFKsy/lp1XxyGCX8oy9anWX5W1nKH4vykaPxZeY1N6SjwPgnmiNMpKJQhu0uf5S6KiPwCzcULNIuJ+qQQ==",
+  "dgSpecHash": "S6hRgSt+hg8laVuBFjKmJZW+5r4yzVKbm9y3aLReMK7BIKUFsRUUyLYJQfwccLjM6RfX40FIbYl0lVsWRSLBRA==",
   "success": true,
-  "projectFilePath": "D:\\IntGestionStock\\GestionStockNET\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
+  "projectFilePath": "D:\\BajadoRodri\\GestionStockNET\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristian\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\azure.identity\\1.11.3\\azure.identity.1.11.3.nupkg.sha512",

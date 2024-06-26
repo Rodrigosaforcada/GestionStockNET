@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ucxW9XQc4ic29ut8sQZJC2dyS3oZW706BibgaQ5BAp1AwiHA3nACPj2XWDV4ADRGyd2akbPIrO0qTcwJjm0tw==",
+  "dgSpecHash": "IwzALPB31Kpfdkc92AekKXcnrsvK88qauqhiNe+Ugnjql9/uzYk62QvaEFYbVly1CfY41+XcYYL4+9eJh+7FRQ==",
   "success": true,
-  "projectFilePath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+  "projectFilePath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.6\\microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "C:\\Users\\Cristian\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.6\\microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",

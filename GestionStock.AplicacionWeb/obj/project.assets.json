@@ -4314,11 +4314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.AplicacionWeb\\GestionStock.AplicacionWeb.csproj",
+      "projectUniqueName": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.AplicacionWeb\\GestionStock.AplicacionWeb.csproj",
       "projectName": "GestionStock.AplicacionWeb",
-      "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.AplicacionWeb\\GestionStock.AplicacionWeb.csproj",
+      "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.AplicacionWeb\\GestionStock.AplicacionWeb.csproj",
       "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-      "outputPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.AplicacionWeb\\obj\\",
+      "outputPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.AplicacionWeb\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4335,11 +4335,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj": {
-              "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj"
+            "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj": {
+              "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj"
             },
-            "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {
-              "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj"
+            "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {
+              "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj"
             }
           }
         }

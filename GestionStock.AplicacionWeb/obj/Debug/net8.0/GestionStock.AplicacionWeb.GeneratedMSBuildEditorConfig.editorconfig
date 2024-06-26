@@ -9,63 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GestionStock.AplicacionWeb
 build_property.RootNamespace = GestionStock.AplicacionWeb
-build_property.ProjectDir = D:\IntGestionStock\GestionStockNET\GestionStock.AplicacionWeb\
+build_property.ProjectDir = D:\BajadoRodri\GestionStockNET\GestionStock.AplicacionWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\IntGestionStock\GestionStockNET\GestionStock.AplicacionWeb
+build_property.MSBuildProjectDirectory = D:\BajadoRodri\GestionStockNET\GestionStock.AplicacionWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Compra/Lista.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Compra/Lista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhXExpc3RhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Compra/NuevaCompra.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Compra/NuevaCompra.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcHJhXE51ZXZhQ29tcHJhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Home/Index.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Home/Privacy.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Producto/ListaProductos.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Producto/ListaProductos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTGlzdGFQcm9kdWN0b3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Producto/NuevoProducto.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Producto/NuevoProducto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cTnVldm9Qcm9kdWN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/Error.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Venta/Lista.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Usuario/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Venta/Lista.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFcTGlzdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Venta/NuevaVenta.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Venta/NuevaVenta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVudGFcTnVldmFWZW50YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/_ViewImports.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/_ViewStart.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/IntGestionStock/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/_Layout.cshtml]
+[D:/BajadoRodri/GestionStockNET/GestionStock.AplicacionWeb/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1l2cx1nwzv

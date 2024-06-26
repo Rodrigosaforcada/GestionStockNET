@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {}
+    "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {}
   },
   "projects": {
-    "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {
+    "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj",
+        "projectUniqueName": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj",
         "projectName": "GestionStock.Core.DataEF",
-        "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj",
+        "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\GestionStock.Core.DataEF.csproj",
         "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Core.DataEF\\obj\\",
+        "outputPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Core.DataEF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
-                "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj"
+              "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
+                "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
+    "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "projectUniqueName": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
         "projectName": "GestionStock.Core.Entities",
-        "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "projectPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
         "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
-        "outputPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\obj\\",
+        "outputPath": "D:\\BajadoRodri\\GestionStockNET\\GestionStock.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",

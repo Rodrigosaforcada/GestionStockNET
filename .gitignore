@@ -1,0 +1,21 @@
+# Archivos de Visual Studio
+.vs/
+
+# Archivos de compilación
+bin/
+obj/
+
+# Archivos de configuración de usuario
+*.user
+*.suo
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Dependencias de paquetes
+node_modules/
+packages/
+
+# Otros archivos y carpetas ignorados
+.env

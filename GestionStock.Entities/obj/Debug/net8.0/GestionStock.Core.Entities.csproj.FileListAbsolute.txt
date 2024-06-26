@@ -23,3 +23,16 @@ D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\Gestio
 D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\refint\GestionStock.Core.Entities.dll
 D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.pdb
 D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\ref\GestionStock.Core.Entities.dll
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.deps.json
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.dll
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.pdb
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.csproj.AssemblyReference.cache
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.AssemblyInfoInputs.cache
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.AssemblyInfo.cs
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.csproj.CoreCompileInputs.cache
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.sourcelink.json
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.dll
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\refint\GestionStock.Core.Entities.dll
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.pdb
+D:\BajadoRodri\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\ref\GestionStock.Core.Entities.dll

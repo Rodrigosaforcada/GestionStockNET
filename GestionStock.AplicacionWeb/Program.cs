@@ -20,6 +20,7 @@ namespace GestionStock.AplicacionWeb
 
 
             // Registrar los repositorios y servicios de negocio
+            builder.Services.AddScoped<UsuarioBusiness>();
             builder.Services.AddScoped<ProductoRepository>();
             builder.Services.AddScoped<ProductoBusiness>();
             builder.Services.AddScoped<VentaRepository>();
