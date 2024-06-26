@@ -10,3 +10,16 @@ C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.En
 C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.pdb
 C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Entities\obj\Debug\net8.0\ref\GestionStock.Core.Entities.dll
 C:\Users\ronni\OneDrive\Escritorio\TPIProg3\TPIProg3GestionStock\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.csproj.AssemblyReference.cache
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.deps.json
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.dll
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\bin\Debug\net8.0\GestionStock.Core.Entities.pdb
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.csproj.AssemblyReference.cache
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.AssemblyInfoInputs.cache
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.AssemblyInfo.cs
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.csproj.CoreCompileInputs.cache
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.sourcelink.json
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.dll
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\refint\GestionStock.Core.Entities.dll
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\GestionStock.Core.Entities.pdb
+D:\IntGestionStock\GestionStockNET\GestionStock.Entities\obj\Debug\net8.0\ref\GestionStock.Core.Entities.dll

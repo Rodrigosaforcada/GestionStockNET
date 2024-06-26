@@ -76,5 +76,7 @@ namespace GestionStock.Core.DataEF
 
             return result;
         }
+
+        
     }
 }

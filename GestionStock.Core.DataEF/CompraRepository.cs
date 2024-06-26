@@ -76,5 +76,15 @@ namespace GestionStock.Core.DataEF
 
             return result;
         }
+
+        public int GetTotalComprasPorProducto(int productoId)
+        {
+            using (var db = new GestionStockContext())
+            {
+                return db.Compras
+                    .Where(c => c.productoId == productoId)
+                    .Sum(c => c.cantidad);
+            }
+        }
     }
 }

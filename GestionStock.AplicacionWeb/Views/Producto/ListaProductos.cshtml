@@ -1,0 +1,32 @@
+﻿@model List<GestionStock.Core.Entities.Producto>;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h1>PRODUCTOS</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+
+                    <th>Nombre</th>
+                    <th>Id producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var prod in Model)
+                {
+                    <tr>
+
+                        <td>@prod.nombre </td>
+                        <td>@prod.productoId</td>
+
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
+

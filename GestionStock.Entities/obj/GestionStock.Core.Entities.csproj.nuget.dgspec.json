@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {}
+    "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
+    "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "projectUniqueName": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
         "projectName": "GestionStock.Core.Entities",
-        "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
-        "packagesPath": "C:\\Users\\ronni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Entities\\obj\\",
+        "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\GestionStock.Core.Entities.csproj",
+        "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+        "outputPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ronni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -1,4 +1,5 @@
-﻿using GestionStock.Core.Entities;
+﻿using GestionStock.Core.DataEF;
+using GestionStock.Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,14 @@ namespace GestionStock.Core.Business
     public class ProductoBusiness
     {
         private Core.DataEF.ProductoRepository _productoRepositoryEF;
+        private readonly CompraRepository _compraRepository;
+        private readonly VentaRepository _ventaRepository;
+
         public ProductoBusiness()
         {
-            _productoRepositoryEF = new GestionStock.Core.DataEF.ProductoRepository();
+            _productoRepositoryEF = new ProductoRepository();
+            _compraRepository = new CompraRepository(); // Repositorio de compras
+            _ventaRepository = new VentaRepository();   // Repositorio de ventas
         }
         public ProductoResult GetAll()
         {
@@ -50,5 +56,21 @@ namespace GestionStock.Core.Business
         {
             return _productoRepositoryEF.DeleteAsync(productoId);
         }
+       
+        public int CalcularStockActual(int productoId)
+        {
+            // Obtener la cantidad total comprada
+            int totalCompras = _compraRepository.GetTotalComprasPorProducto(productoId);
+
+            // Obtener la cantidad total vendida
+            int totalVentas = _ventaRepository.GetTotalVentasPorProducto(productoId);
+
+            // Calcular el stock actual
+            int stockActual = totalCompras - totalVentas;
+
+            return stockActual;
+        }
+
     }
-}
+    }
+

@@ -2872,19 +2872,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ronni\\.nuget\\packages\\": {}
+    "C:\\Users\\Cristian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
+      "projectUniqueName": "D:\\IntGestionStock\\GestionStockNET\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
       "projectName": "GestionStock.AppConsola",
-      "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
-      "packagesPath": "C:\\Users\\ronni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\TPIProg3GestionStock\\obj\\",
+      "projectPath": "D:\\IntGestionStock\\GestionStockNET\\TPIProg3GestionStock\\GestionStock.AppConsola.csproj",
+      "packagesPath": "C:\\Users\\Cristian\\.nuget\\packages\\",
+      "outputPath": "D:\\IntGestionStock\\GestionStockNET\\TPIProg3GestionStock\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ronni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cristian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2898,8 +2898,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\GestionStock.Core.Business.csproj": {
-              "projectPath": "C:\\Users\\ronni\\OneDrive\\Escritorio\\TPIProg3\\TPIProg3GestionStock\\GestionStock.Business\\GestionStock.Core.Business.csproj"
+            "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj": {
+              "projectPath": "D:\\IntGestionStock\\GestionStockNET\\GestionStock.Business\\GestionStock.Core.Business.csproj"
             }
           }
         }

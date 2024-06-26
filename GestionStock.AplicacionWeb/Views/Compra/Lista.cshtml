@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model List<GestionStock.Core.Entities.Compra>;
+<div class="row">
+    <div class="col-sm-8 offset-sm-2">
+        <h1>LISTA DE COMPRAS</h1>
+        <a asp-controller="Compra" asp-action="NuevaCompra" class="btn btn-primary mb-3">NUEVA COMPRA</a>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+
+                    <th>Fecha de compra</th>
+                    <th>Id compra</th>
+                    <th>Id producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var comp in Model)
+                {
+                    <tr>
+
+                        <td>@comp.fecha </td>
+                        <td>@comp.compraId</td>
+                        <td>@comp.productoId</td>
+
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+    </div>
+</div>
