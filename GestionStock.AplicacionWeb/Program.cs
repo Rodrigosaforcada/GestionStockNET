@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using GestionStock.Core.DataEF;
-using Microsoft.AspNetCore.Authentication.Cookies; // Importación para la autenticación con cookies
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using GestionStock.Core.Business;
@@ -14,12 +14,13 @@ namespace GestionStock.AplicacionWeb
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Agregar servicios al contenedor.
+            
             builder.Services.AddDbContext<GestionStockContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL")));
 
 
-            // Registrar los repositorios y servicios de negocio
+            
+            builder.Services.AddScoped<UsuarioRepository>();
             builder.Services.AddScoped<UsuarioBusiness>();
             builder.Services.AddScoped<ProductoRepository>();
             builder.Services.AddScoped<ProductoBusiness>();
@@ -28,21 +29,22 @@ namespace GestionStock.AplicacionWeb
             builder.Services.AddScoped<CompraRepository>();
             builder.Services.AddScoped<CompraBusiness>();
 
-            // Agregar controladores con vistas (MVC)
+            
             builder.Services.AddControllersWithViews();
 
-            // Agregar autenticación y autorización
+            
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
-                    options.LoginPath = "/Account/Login"; // Ruta de inicio de sesión
+                    options.LoginPath = "/Usuario/Login";
+                    options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
                 });
 
             builder.Services.AddAuthorization();
 
             var app = builder.Build();
 
-            // Configurar el pipeline de la aplicación.
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -58,12 +60,12 @@ namespace GestionStock.AplicacionWeb
 
             app.UseRouting();
 
-            app.UseAuthentication(); // Asegúrate de que esto esté antes de UseAuthorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Venta}/{action=Lista}/{id?}");
+                pattern: "{controller=Usuario}/{action=Registro}/{id?}");
 
             app.Run();
         }

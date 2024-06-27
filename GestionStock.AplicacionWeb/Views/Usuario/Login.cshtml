@@ -1,4 +1,4 @@
-﻿@model GestionStock.Core.Entities.Usuario;
+﻿@model GestionStock.AplicacionWeb.Models.RegistroViewModel;
 
 @{
     Layout = null;
@@ -6,6 +6,9 @@
 <html>
     <head>
         <title>Inicio de sesion</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/GestionStock.AplicacionWeb.styles.css" asp-append-version="true" />
     </head>
     <body>
         <div class="row mt-5 justify-content-center">
@@ -16,16 +19,29 @@
                     </div>
                     <div class="card-body">
                         <form asp-controller="Usuario" asp-action="Login" method="post">
-                            <input class="form-control mb-3" type="text" placeholder="Nombre de Usuario" required asp-for="nombre" />
-                        <input class="form-control mb-3" type="password" placeholder="Contraseña" required asp-for="hash" />
+                            <input class="form-control mb-3" type="text" placeholder="Nombre de Usuario" required asp-for="Nombre" />
+                        <input class="form-control mb-3" type="password" placeholder="Contraseña" required asp-for="Contrasena" />
                             <div class="d-grid gap-2 mb-3">
                                 <button class="btn btn-primary"type="submit"> Ingresar</button>
                             </div>
                         </form>
+                    <div>
+                        @if (ViewData["SuccessMessage"] != null)
+                        {
+                            <div class="alert alert-success">@ViewData["SuccessMessage"]</div>
+                        }
+                        @if (ViewData["ErrorMessage"] != null)
+                        {
+                            <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+                        }
+                    </div>
                     </div>
                 </div>
 
             </div>
         </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     </body>
 </html>

@@ -1,8 +1,13 @@
-﻿using GestionStock.Core.Business;
+﻿using GestionStock.AplicacionWeb.Models;
+using GestionStock.Core.Business;
 using GestionStock.Core.DataEF;
 using GestionStock.Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 namespace GestionStock.AplicacionWeb.Controllers
 {
@@ -10,44 +15,70 @@ namespace GestionStock.AplicacionWeb.Controllers
     {
         private readonly UsuarioBusiness _usuarioBusiness;
 
-    public UsuarioController(UsuarioBusiness usuarioBusiness)
-    {
-        _usuarioBusiness = usuarioBusiness;
-    }
+        public UsuarioController(UsuarioBusiness usuarioBusiness)
+        {
+            _usuarioBusiness = usuarioBusiness;
+        }
+
+
         [HttpGet]
         public IActionResult Registro()
         {
             return View();
         }
-        [HttpPost]
+        /*[HttpPost]
         public async Task<IActionResult> Registro(string nombreNuevoUsuario, string contrasenaNuevoUsuario)
         {
+
            var result = _usuarioBusiness.CreateUsuario(nombreNuevoUsuario, contrasenaNuevoUsuario);
            await Task.Delay(5000);
             ViewData["SuccessMessage"] = "Usuario creado exitosamente";
             return View();
+            }*/
+        [HttpPost]
+        public async Task<IActionResult> Registro(RegistroViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = _usuarioBusiness.CreateUsuario(model.Nombre, model.Contrasena);
+
+                ViewData["SuccessMessage"] = "Usuario creado exitosamente";
+                await Task.Delay(5000);
+                return RedirectToAction(nameof(Login));
             }
-        
+
+            ViewData["ErrorMessage"] = "El nombre de usuario y la contraseña no pueden estar vacíos.";
+            return View(model);
+        }
+
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(int usuarioId, string password)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
-            var result = _usuarioBusiness.ControlContrasena(usuarioId, password);
-            if (result == false)
+            if (ModelState.IsValid)
             {
-                ViewData["ErrorMessage"] = "No estas registrado";
-                return View(); 
-            }
-            await Task.Delay(5000);
+                var result = _usuarioBusiness.ControlContrasena(model.Nombre, model.Contrasena);
 
-            return RedirectToAction("Producto");
-        }
-    }
-}
+                if (!result)
+                {
+                    ViewData["ErrorMessage"] = "No estás registrado";
+                    await Task.Delay(5000);
+                    return View(model);
+                }
+               
+            }
+                return View("~/Views/Home/Index.cshtml");
+             }
+            public IActionResult Salir()
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+       
+    } }
 
 
 

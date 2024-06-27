@@ -8,11 +8,11 @@ namespace GestionStock.Core.Business
 {
     public class UsuarioBusiness
     {
-       
+        private readonly DataEF.UsuarioRepository _usuarioRepositoryEF;
 
-        private Core.DataEF.UsuarioRepository _usuarioRepositoryEF;
         public UsuarioBusiness()
         {
+          
             _usuarioRepositoryEF = new GestionStock.Core.DataEF.UsuarioRepository();
         }
         public UsuarioResult GetAll()

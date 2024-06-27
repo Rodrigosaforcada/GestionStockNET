@@ -10,7 +10,7 @@ namespace GestionStock.Core.Business
 {
     public class ProductoBusiness
     {
-        private Core.DataEF.ProductoRepository _productoRepositoryEF;
+        private ProductoRepository _productoRepositoryEF;
         private readonly CompraRepository _compraRepository;
         private readonly VentaRepository _ventaRepository;
 
