@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Code:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
 html {
     font-size: 14px;
 }
@@ -141,10 +143,115 @@ h1 {
         border-bottom: 2px solid #007bff;
     }
 
-
-
-
-
 .mb-3 {
     margin-bottom: 20px;
+}
+
+
+nav.navbar.navbar-expand-sm.navbar-toggleable-sm.navbar-light.bg-white.border-bottom.box-shadow.mb-3 {
+    color: #eceff1;
+    background-color: #c5e1a5;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    border-style: none;
+}
+
+thead tr th {
+    background-color: #81c784;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+tbody tr td {
+    background-color: #dcedc8;
+    border-style: none;
+    border-color: #000000;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    color: #004d40;
+    text-align: center;
+}
+
+div div h1 {
+    font-size: 72px;
+    line-height: 100px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    font-family: Fira Code;
+    color: #aed581;
+    background-color: #ffffff;
+    border-style: solid;
+    border-color: #aed581;
+}
+
+a.nav-link.text-dark {
+    color: #fafafa;
+}
+
+div.container-fluid {
+    color: #fafafa;
+}
+
+a. navbar-brand {
+    color: #ffffff;
+}
+
+a.navbar-brand {
+    color: #ffffff;
+}
+
+a.btn.btn-primary.mb-3 {
+    background-color: #43a047;
+    color: #ffffff;
+    text-transform: none;
+    font-size: 18px;
+    border-color: #2e7d32;
+}
+
+html body {
+    background-color: #dcedc8;
+}
+
+table.table.table-bordered {
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+div.col-sm-4 {
+    background-color: #00695c;
+    color: #00838f;
+    border-style: none;
+    border-color: #ffffff;
+}
+
+div.card {
+    color: #ffffff;
+    background-color: #00695c;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+button.btn.btn-primary {
+    background-color: #c5e1a5;
+    color: #006064;
+}
+
+
+div div h2 {
+    background-color: #dcedc8;
+    font-size: 48px;
+    color: #2e7d32;
+    border-color: #2e7d32;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+thead tr th {
+    color: #fafafa;
+    background-color: #aed581;
 }

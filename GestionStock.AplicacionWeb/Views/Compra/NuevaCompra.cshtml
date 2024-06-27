@@ -6,18 +6,13 @@
  <div class="row">
     <div class="col-sm-8 offset-sm-2">
         <div>
-            @if (TempData["SucessMessage"] != null)
+            @if (ViewData["SuccessMessage"] != null)
             {
-                <div class="alert alert-success">
-                    @TempData["SuccessMessage"]
-                </div>
+                <div class="alert alert-success">@ViewData["SuccessMessage"]</div>
             }
-
-            @if (TempData["ErrorMessage"] != null)
+            @if (ViewData["ErrorMessage"] != null)
             {
-                <div class="alert alert-danger">
-                    @TempData["ErrorMessage"]
-                </div>
+                <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
             }
         </div>
         <h2>Nueva compra</h2>

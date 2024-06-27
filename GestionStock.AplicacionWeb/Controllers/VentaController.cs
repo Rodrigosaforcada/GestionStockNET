@@ -64,15 +64,15 @@ namespace GestionStock.AplicacionWeb.Controllers
             if (cantidad <= stockDisponible)
             {
                 var result = _ventaBusiness.CreateVenta(fecha, productoId, cantidad, usuarioId);
-                TempData["SuccessMessage"] = "Venta realizada con éxito.";
-                await Task.Delay(5000);
-                return RedirectToAction(nameof(Lista));   
+                ViewData["SuccessMessage"] = "Venta realizada con éxito.";
+                
+                return View();   
             }
             else
             { 
-                TempData["ErrorMessage"] = "No hay suficiente stock disponible para realizar esta venta.";
+                ViewData["ErrorMessage"] = "No hay suficiente stock disponible para realizar esta venta.";
                 await Task.Delay(5000);
-                return RedirectToAction(nameof(NuevaVenta));           
+                return View();           
             }
         }
 } }

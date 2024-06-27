@@ -26,15 +26,7 @@ namespace GestionStock.AplicacionWeb.Controllers
         {
             return View();
         }
-        /*[HttpPost]
-        public async Task<IActionResult> Registro(string nombreNuevoUsuario, string contrasenaNuevoUsuario)
-        {
-
-           var result = _usuarioBusiness.CreateUsuario(nombreNuevoUsuario, contrasenaNuevoUsuario);
-           await Task.Delay(5000);
-            ViewData["SuccessMessage"] = "Usuario creado exitosamente";
-            return View();
-            }*/
+        
         [HttpPost]
         public async Task<IActionResult> Registro(RegistroViewModel model)
         {
@@ -75,18 +67,7 @@ namespace GestionStock.AplicacionWeb.Controllers
                 ViewData["ErrorMessage"] = "Nombre de usuario o contraseña incorrectos.";
                 return View();
             }
-            /*if (ModelState.IsValid)
-            {
-                var result = _usuarioBusiness.ControlContrasena(model.Nombre, model.Contrasena);
-
-                if (!result)
-                {
-                    ViewData["ErrorMessage"] = "No estás registrado";
-                    await Task.Delay(5000);
-                    return View(model);
-                }
-                
-            */
+         
                 return View("~/Views/Home/Index.cshtml");
              }
             public IActionResult Salir()
@@ -98,41 +79,3 @@ namespace GestionStock.AplicacionWeb.Controllers
 
 
 
-/*public class CompraController : Controller
-{
-    private readonly CompraBusiness _compraBusiness;
-
-    public CompraController(CompraBusiness compraBusiness)
-    {
-        _compraBusiness = compraBusiness;
-    }
-
-    [HttpGet]
-    public IActionResult Lista()
-    {
-        List<Compra> compras = _compraBusiness.GetAll().Compras;
-        if (compras == null)
-        {
-            // Manejar el caso cuando ventaResult  es null
-            return View(new List<Compra>()); // Pasar una lista vacía a la vista
-        }
-        return View(compras);
-
-
-
-    }
-
-    [HttpGet]
-    public IActionResult NuevaCompra()
-    {
-        return View();
-    }
-
-    [HttpPost]
-    public IActionResult NuevaCompra(DateTime fecha, int productoId, int cantidad, int usuarioId)
-    {
-        var result = _compraBusiness.CreateCompra(fecha, productoId, cantidad, usuarioId);
-        return RedirectToAction(nameof(Lista));
-    }
-}
-}*/

@@ -44,8 +44,6 @@ namespace GestionStock.AplicacionWeb.Controllers
     [HttpGet]
         public IActionResult NuevaCompra()
         {
-            //TempData["SuccessMessage"] =null;
-           // TempData["ErrorMessage"] = null;
             var currentDateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             ViewBag.CurrentDateTime = currentDateTime;
             return View();
@@ -59,22 +57,19 @@ namespace GestionStock.AplicacionWeb.Controllers
 
             if (fecha.Date < fechaMinima || fecha.Date > fechaActual)
             {
-                TempData["ErrorMessage"] = "No se puede asignar una fecha con más de 7 días de anterioridad o que sea posterior al día de hoy.";
-                await Task.Delay(10000);
-              
-                return RedirectToAction(nameof(NuevaCompra));
+                ViewData["ErrorMessage"] = "No se puede asignar una fecha con más de 7 días de anterioridad o que sea posterior al día de hoy.";
+              return View();
             }
             else
             {
             GenericResult result = _compraBusiness.CreateCompra(fecha, productoId, cantidad, usuarioId);
 
-            TempData["SuccessMessage"] = "Compra creada exitosamente.";
-            await Task.Delay(10000);
-             
+            ViewData["SuccessMessage"] = "Compra creada exitosamente.";
+                await Task.Delay(5000);
+                return View();
             }
-            TempData["SuccessMessage"] = null;
-            TempData["ErrorMessage"] = null;
-            return RedirectToAction(nameof(Lista));
+            
+           
 
         }
     }
