@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A4E74C90-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionStock.Core.DataEF", "GestionStock.Core.DataEF\GestionStock.Core.DataEF.csproj", "{E4BD9E9F-4125-48B4-BD8A-03CB70D893C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionStock.AplicacionWeb", "GestionStock.AplicacionWeb\GestionStock.AplicacionWeb.csproj", "{158A472F-3E1E-4699-9EA7-6B7461D57B92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestionStock.AplicacionWeb", "GestionStock.AplicacionWeb\GestionStock.AplicacionWeb.csproj", "{158A472F-3E1E-4699-9EA7-6B7461D57B92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestionStock.API", "GestionStock.API\GestionStock.API.csproj", "{7AFE781D-D2D3-40E1-9AEF-E51F6B9ACF48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{158A472F-3E1E-4699-9EA7-6B7461D57B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{158A472F-3E1E-4699-9EA7-6B7461D57B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{158A472F-3E1E-4699-9EA7-6B7461D57B92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AFE781D-D2D3-40E1-9AEF-E51F6B9ACF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AFE781D-D2D3-40E1-9AEF-E51F6B9ACF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AFE781D-D2D3-40E1-9AEF-E51F6B9ACF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AFE781D-D2D3-40E1-9AEF-E51F6B9ACF48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

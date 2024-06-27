@@ -2,6 +2,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@{
+    var productoNombres = ViewBag.ProductoNombres as Dictionary<int, string>;
+}
 @model List<GestionStock.Core.Entities.Compra>;
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
@@ -13,6 +16,7 @@
 
                     <th>Fecha de compra</th>
                     <th>Id compra</th>
+                    <th>Producto</th>
                     <th>Id producto</th>
                 </tr>
             </thead>
@@ -23,6 +27,7 @@
 
                         <td>@comp.fecha </td>
                         <td>@comp.compraId</td>
+                        <td>@productoNombres[comp.productoId]</td>
                         <td>@comp.productoId</td>
 
                     </tr>

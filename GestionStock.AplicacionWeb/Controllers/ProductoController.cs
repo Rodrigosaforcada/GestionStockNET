@@ -22,9 +22,8 @@ namespace GestionStock.AplicacionWeb.Controllers
         {
             List<Producto> productos = _productoBusiness.GetAll().Productos;
             if (productos == null)
-            {
-                // Manejar el caso cuando productoResult o productoResult.Productos es null
-                return View(new List<Producto>()); // Pasar una lista vacía a la vista
+            {   
+                return View(new List<Producto>()); 
             }
             return View(productos);  
         }

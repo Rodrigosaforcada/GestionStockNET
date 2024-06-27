@@ -9,10 +9,12 @@ namespace GestionStock.AplicacionWeb.Controllers
     public class CompraController : Controller
     {
         private readonly CompraBusiness _compraBusiness;
+        private readonly ProductoBusiness _productoBusiness;
 
-        public CompraController(CompraBusiness compraBusiness)
+        public CompraController(CompraBusiness compraBusiness, ProductoBusiness productoBusiness)
         {
             _compraBusiness = compraBusiness;
+            _productoBusiness = productoBusiness;
         }
 
         [HttpGet]
@@ -21,13 +23,25 @@ namespace GestionStock.AplicacionWeb.Controllers
             List<Compra> compras = _compraBusiness.GetAll().Compras;
             if (compras == null)
             {
-                // Manejar el caso cuando ventaResult  es null
-                return View(new List<Compra>()); // Pasar una lista vacía a la vista
+                return View(new List<Compra>());
             }
+
+            List<Producto> productos = _productoBusiness.GetAll().Productos;
+            if (productos == null)
+            {
+                productos = new List<Producto>();
+            }
+
+            // Crea un diccionario para mapear productoId a nombre de producto
+            var productoNombres = productos.ToDictionary(p => p.productoId, p => p.nombre);
+
+            // Pasa las compras y los nombres de productos a la vista
+            ViewBag.ProductoNombres = productoNombres;
             return View(compras);
         }
 
-        [HttpGet]
+
+    [HttpGet]
         public IActionResult NuevaCompra()
         {
             //TempData["SuccessMessage"] =null;

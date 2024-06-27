@@ -65,6 +65,10 @@ namespace GestionStock.Core.Business
 
             return _usuarioRepositoryEF.CreateUsuario(nuevoUsuario);
         }
+        public Usuario GetUsuarioByNombre(string nombre)
+        {
+            return _usuarioRepositoryEF.GetByNombre(nombre);
+        }
         public bool ControlContrasena(int usuarioId, string password)
         {
             Usuario usuarioAVerificar = _usuarioRepositoryEF.GetAsync(usuarioId);

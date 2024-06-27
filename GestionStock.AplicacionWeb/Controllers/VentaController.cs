@@ -27,6 +27,17 @@ namespace GestionStock.AplicacionWeb.Controllers
                 // Manejar el caso cuando ventaResult  es null
                 return View(new List<Venta>()); // Pasar una lista vacía a la vista
             }
+            List<Producto> productos = _productoBusiness.GetAll().Productos;
+            if (productos == null)
+            {
+                productos = new List<Producto>();
+            }
+
+            // Crea un diccionario para mapear productoId a nombre de producto
+            var productoNombres = productos.ToDictionary(p => p.productoId, p => p.nombre);
+
+            // Pasa las compras y los nombres de productos a la vista
+            ViewBag.ProductoNombres = productoNombres;
             return View(ventas);
 
 

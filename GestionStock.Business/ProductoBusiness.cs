@@ -17,8 +17,8 @@ namespace GestionStock.Core.Business
         public ProductoBusiness()
         {
             _productoRepositoryEF = new ProductoRepository();
-            _compraRepository = new CompraRepository(); // Repositorio de compras
-            _ventaRepository = new VentaRepository();   // Repositorio de ventas
+            _compraRepository = new CompraRepository(); 
+            _ventaRepository = new VentaRepository(); 
         }
         public ProductoResult GetAll()
         {

@@ -63,17 +63,7 @@ namespace GestionStock.Core.DataEF
             result.IsSuccessful = true;
             return result;
         }
-       /* public GenericResult CreateUsuario(Usuario usuario)
-        {
-            using (var db = new GestionStockContext())
-            {
-                db.Add(usuario);
-                db.SaveChanges();
-            }
-            var result = new GenericResult();
-            result.IsSuccessful = true;
-            return result;
-        }*/
+      
         public GenericResult CreateUsuario(Usuario usuario)
         {
             var result = new GenericResult();
@@ -82,7 +72,7 @@ namespace GestionStock.Core.DataEF
                 using (var db = new GestionStockContext())
                 {
                     db.Add(usuario);
-                    db.SaveChanges(); // Asegúrate de llamar a SaveChanges para persistir los datos
+                    db.SaveChanges(); 
                 }
                 result.IsSuccessful = true;
             }
@@ -93,5 +83,19 @@ namespace GestionStock.Core.DataEF
             }
             return result;
         }
+
+        public Usuario GetByNombre(string nombre)
+        {
+            using (var db = new GestionStockContext())
+            {
+                var usuario = from us in db.Usuarios
+                              where us.nombre == nombre
+                              select us;
+
+                return usuario.FirstOrDefault();
+            }
+        }
+
+
     }
 }

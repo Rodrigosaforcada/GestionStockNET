@@ -2,7 +2,9 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+@{
+    var productoNombres = ViewBag.ProductoNombres as Dictionary<int, string>;
+}
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
         <h1>LISTA DE VENTAS</h1>
@@ -23,6 +25,7 @@
 
                         <td>@vent.fecha </td>
                         <td>@vent.ventaId</td>
+                        <td>@productoNombres[vent.productoId]</td>
                         <td>@vent.productoId</td>
 
                     </tr>

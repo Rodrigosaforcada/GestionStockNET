@@ -58,8 +58,24 @@ namespace GestionStock.AplicacionWeb.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
+
         {
-            if (ModelState.IsValid)
+            // Buscar el usuario por nombre
+            Usuario usuario = _usuarioBusiness.GetUsuarioByNombre(model.Nombre);
+            if (usuario == null)
+            {
+                ViewData["ErrorMessage"] = "Usuario no encontrado.";
+                return View();
+            }
+
+            // Verificar la contraseña usando el ID del usuario
+            bool result = _usuarioBusiness.ControlContrasena(usuario.usuarioId, model.Contrasena);
+            if (!result)
+            {
+                ViewData["ErrorMessage"] = "Nombre de usuario o contraseña incorrectos.";
+                return View();
+            }
+            /*if (ModelState.IsValid)
             {
                 var result = _usuarioBusiness.ControlContrasena(model.Nombre, model.Contrasena);
 
@@ -69,8 +85,8 @@ namespace GestionStock.AplicacionWeb.Controllers
                     await Task.Delay(5000);
                     return View(model);
                 }
-               
-            }
+                
+            */
                 return View("~/Views/Home/Index.cshtml");
              }
             public IActionResult Salir()
